@@ -13,9 +13,9 @@ const ProfileLeftBottom = () => {
                 <IoArchiveOutline size={20} />
                 <p className="font-bold">Archive</p>
             </div>
-            <div className='rounded-md border border-neutral-300 px-4 py-2 flex items-center justify-center gap-2'>
+            <div className='rounded-md border border-neutral-300 px-4 py-2 flex items-center justify-center gap-2 text-red-500'>
                 <FaRegTrashAlt size={20} />
-                <p className="font-bold">Snooze 2 Weeks</p>
+                <p className="font-bold">Delete</p>
             </div>
         </div>
     );

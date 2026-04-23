@@ -33,7 +33,7 @@ const ProfileLeftTopCard = ({ friend }) => {
                     <div>
                         <Status status={friend.status} />
                     </div>
-                    <p className='text-gray-500'>{friend.bio}</p>
+                    <p className='text-gray-500'>&quot;{friend.bio}&quot;</p>
 
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import React, { use } from 'react';
 import ProfileLeft from './profileLeft/ProfileLeft';
+import ProfileRight from './profileRight/ProfileRight';
 
 const FriendProfile = async ({ params }) => {
     const res = await params;
@@ -12,15 +13,15 @@ const FriendProfile = async ({ params }) => {
 
     return (
         <div className='container mx-auto'>
-            <div className='flex md:flex-row md:gap-10 mt-20 mb-20'>
+            <div className='flex md:flex-row md:gap-10 mt-20 mb-20 items-center'>
                 {/* left */}
                 <div className='md:w-[30%]'>
                     <ProfileLeft friend={friend} />
                 </div>
 
                 {/* right */}
-                <div className='md:w-[70%] bg-lime-200 p-20'>
-
+                <div className='md:w-[70%] p-20'>
+                    <ProfileRight friend={friend}/>
                 </div>
             </div>
         </div>
