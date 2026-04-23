@@ -1,9 +1,9 @@
-import FriendsContainer from "./components/homepage/FriendsContainer";
+import FriendsContainer from "./components/homepage/friends/FriendsContainer";
 import Banner from "./pages/homepage/Banner";
 
 export default function Home() {
   return (
-    <div className="h-screen container mx-auto">
+    <div className="container mx-auto">
       <Banner /> 
       
       <FriendsContainer />

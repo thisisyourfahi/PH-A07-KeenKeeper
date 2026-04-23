@@ -2,14 +2,12 @@
   {
     "id": 1,
     "name": "John Doe",
-    "picture": "https://api.example.com/avatars/john-doe.jpg",
+    "picture": "https://images.pexels.com/photos/5308640/pexels-photo-5308640.jpeg",
     "email": "john.doe@email.com",
     "days_since_contact": 12,
     "status": "overdue",
     "tags": [
-      "college",
-      "close friend",
-      "hiking"
+      "college"
     ],
     "bio": "Met in university. Love hiking together on weekends.",
     "goal": 14,
@@ -18,13 +16,12 @@
   {
     "id": 2,
     "name": "Sarah Chen",
-    "picture": "https://api.example.com/avatars/sarah-chen.jpg",
+    "picture": "https://images.pexels.com/photos/6497114/pexels-photo-6497114.jpeg",
     "email": "sarah.chen@email.com",
     "days_since_contact": 4,
-    "status": "on track",
+    "status": "on-track",
     "tags": [
       "work",
-      "coffee buddy",
       "mentor"
     ],
     "bio": "Senior colleague from my first tech job. We grab coffee monthly.",
@@ -34,12 +31,11 @@
   {
     "id": 3,
     "name": "Michael Rodriguez",
-    "picture": "https://api.example.com/avatars/michael-rodriguez.jpg",
+    "picture": "https://images.pexels.com/photos/7561911/pexels-photo-7561911.jpeg",
     "email": "m.rodriguez@email.com",
     "days_since_contact": 28,
     "status": "overdue",
     "tags": [
-      "childhood friend",
       "distant"
     ],
     "bio": "Grew up together in the same neighborhood. Haven't caught up in a while.",
@@ -49,14 +45,13 @@
   {
     "id": 4,
     "name": "Emma Williams",
-    "picture": "https://api.example.com/avatars/emma-williams.jpg",
+    "picture": "https://images.pexels.com/photos/10856932/pexels-photo-10856932.jpeg",
     "email": "emma.w@email.com",
     "days_since_contact": 3,
-    "status": "on track",
+    "status": "on-track",
     "tags": [
       "roommate",
-      "close friend",
-      "gym buddy"
+      "close friend"
     ],
     "bio": "Current roommate. We work out together and cook dinner most nights.",
     "goal": 7,
@@ -65,28 +60,25 @@
   {
     "id": 5,
     "name": "David Park",
-    "picture": "https://api.example.com/avatars/david-park.jpg",
+    "picture": "https://images.pexels.com/photos/7752812/pexels-photo-7752812.jpeg",
     "email": "david.park@email.com",
-    "days_since_contact": 45,
-    "status": "overdue",
+    "days_since_contact": 18,
+    "status": "almost due",
     "tags": [
-      "online gaming",
-      "long-distance friend"
+      "online gaming"
     ],
     "bio": "Met through gaming community 5 years ago. Lives in another country.",
     "goal": 21,
-    "next_due_date": "2025-05-30"
+    "next_due_date": "2025-08-08"
   },
   {
     "id": 6,
     "name": "Jessica Martinez",
-    "picture": "https://api.example.com/avatars/jessica-martinez.jpg",
+    "picture": "https://images.pexels.com/photos/5649997/pexels-photo-5649997.jpeg",
     "email": "jess.martinez@email.com",
     "days_since_contact": 7,
-    "status": "on track",
+    "status": "on-track",
     "tags": [
-      "yoga class",
-      "wellness",
       "new friend"
     ],
     "bio": "Met at my yoga studio last year. Great energy and super supportive.",
@@ -96,13 +88,12 @@
   {
     "id": 7,
     "name": "Thomas Anderson",
-    "picture": "https://api.example.com/avatars/thomas-anderson.jpg",
+    "picture": "https://images.pexels.com/photos/7752807/pexels-photo-7752807.jpeg",
     "email": "t.anderson@email.com",
     "days_since_contact": 19,
-    "status": "at risk",
+    "status": "almost due",
     "tags": [
-      "high school friend",
-      "occasional"
+      "high school friend"
     ],
     "bio": "Best friend from high school. We try to meet up a few times a year.",
     "goal": 30,
@@ -111,14 +102,12 @@
   {
     "id": 8,
     "name": "Priya Patel",
-    "picture": "https://api.example.com/avatars/priya-patel.jpg",
+    "picture": "https://images.pexels.com/photos/12698379/pexels-photo-12698379.jpeg",
     "email": "priya.patel@email.com",
     "days_since_contact": 1,
-    "status": "on track",
+    "status": "on-track",
     "tags": [
-      "close friend",
-      "travel buddy",
-      "life coach"
+      "travel buddy"
     ],
     "bio": "One of my best friends. We travel together and support each other through everything.",
     "goal": 10,
