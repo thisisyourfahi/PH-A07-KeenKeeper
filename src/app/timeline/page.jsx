@@ -1,9 +1,10 @@
 import React from 'react';
+import Top from './Top';
 
 const Timeline = () => {
     return (
-        <div>
-            <p>This is timeline Page.</p>
+        <div className='container mx-auto mt-10 mb-20'>
+            <Top />
         </div>
     );
 };
