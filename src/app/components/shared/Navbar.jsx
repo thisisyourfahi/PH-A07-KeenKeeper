@@ -1,10 +1,15 @@
+'use client'
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React from 'react';
 import { GoClock } from 'react-icons/go';
 import { GrHomeRounded } from 'react-icons/gr';
 import { TfiStatsUp } from 'react-icons/tfi';
 
 const Navbar = () => {
+    const pathname = usePathname();
+    console.log('pathname:', pathname)
+
     return (
         <div className="bg-base-100 shadow-sm w-full">
             <div className="navbar flex justify-between container mx-auto">
@@ -14,18 +19,31 @@ const Navbar = () => {
                     </h2>
                 </div>
                 <div className="flex items-center gap-2">
-                    <Link href='/' className='flex items-center gap-2 bg-[#244D3F] px-4 py-1 rounded-md text-white'>
+                    <Link
+                        href="/"
+                        className={`px-4 py-1 rounded-md flex items-center gap-2 ${pathname === '/' ? 'bg-[#244D3F] text-white' : ''
+                            }`}
+                    >
                         <GrHomeRounded size={20} />
-                        <button>Home</button>
+                        Home
                     </Link>
-                    <Link href='/' className='flex items-center gap-2 bg-[#244D3F] px-4 py-1 rounded-md text-white'>
+                    <Link
+                        href="/timeline"
+                        className={`px-4 py-1 rounded-md flex items-center gap-2 ${pathname === '/timeline' ? 'bg-[#244D3F] text-white' : ''
+                            }`}
+                    >
                         <GoClock size={20} />
-                        <button>Timeline</button>
+                        Timeline
                     </Link>
-                    <Link href='/' className='flex items-center gap-2 bg-[#244D3F] px-4 py-1 rounded-md text-white'>
+                    <Link
+                        href="/stats"
+                        className={`px-4 py-1 rounded-md flex items-center gap-2 ${pathname === '/stats' ? 'bg-[#244D3F] text-white' : ''
+                            }`}
+                    >
                         <TfiStatsUp size={20} />
-                        <button>Stats</button>
+                        Stats
                     </Link>
+
                 </div>
             </div>
         </div>
