@@ -6,7 +6,7 @@ import React from 'react';
 const ProfileLeftTopCard = ({ friend }) => {
     return (
         <div>
-            <div className='space-y-2 border border-neutral-300 pt-8 pb-8 rounded-md shadow-md text-center hover:cursor-pointer hover:shadow-2xl'>
+            <div className='space-y-2 border border-neutral-300 p-4 rounded-md text-center hover:cursor-pointer hover:shadow-md transition-shadow'>
                 {/* image */}
                 <div className='w-fit mx-auto'>
                     <Image alt={friend.name}
@@ -34,6 +34,7 @@ const ProfileLeftTopCard = ({ friend }) => {
                         <Status status={friend.status} />
                     </div>
                     <p className='text-gray-500'>&quot;{friend.bio}&quot;</p>
+                    <p className='text-gray-500'>Email: {friend.email}</p>
 
                 </div>
             </div>

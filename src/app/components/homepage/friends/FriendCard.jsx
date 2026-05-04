@@ -8,7 +8,7 @@ import Link from 'next/link';
 const FriendCard = ({ friend }) => {
     return (
         <Link href={`/${friend.id}`}>
-            <div className='space-y-2 border border-neutral-300 pt-8 pb-8 rounded-md shadow-md text-center hover:cursor-pointer hover:shadow-2xl'>
+            <div className='space-y-2 border border-neutral-300 pt-8 pb-8 rounded-md shadow-md text-center hover:cursor-pointer hover:shadow-xl transition-shadow'>
                 {/* image */}
                 <div className='w-fit mx-auto'>
                     <Image alt={friend.name}
