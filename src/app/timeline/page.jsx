@@ -4,7 +4,7 @@ import TimelineHistory from './TimelineHistory';
 
 const Timeline = () => {
     return (
-        <div className='container mx-auto mt-10 mb-20'>
+        <div className='container mx-auto mt-10 mb-40'>
             <Top />
 
             <TimelineHistory />
