@@ -3,12 +3,20 @@ import React, { useContext } from 'react';
 import { FriendsContexts } from '../components/contexts/FriendsContext';
 import TimelineHistoryComp from './TimelineHistoryComp';
 
-const TimelineHistory = () => {
-    const {timeline} = useContext(FriendsContexts)
+const TimelineHistory = ({ filter }) => {
+    const { timeline } = useContext(FriendsContexts);
+
+    const filteredTimeline = timeline.filter(item => {
+        if (filter === "ALL") return true;
+        return item.action.toUpperCase() === filter;
+    });
+
     return (
         <div className='space-y-8 pt-8'>
             {
-                timeline.map((obj, ind) => <TimelineHistoryComp key={ind} obj={obj} />)
+                filteredTimeline.map((obj, ind) => (
+                    <TimelineHistoryComp key={ind} obj={obj} />
+                ))
             }
         </div>
     );

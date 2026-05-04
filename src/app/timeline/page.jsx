@@ -1,13 +1,16 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import Top from './Top';
 import TimelineHistory from './TimelineHistory';
 
 const Timeline = () => {
+    const [filter, setFilter] = useState("ALL");
+
     return (
         <div className='container mx-auto mt-10 mb-40'>
-            <Top />
+            <Top setFilter={setFilter} filter={filter} />
 
-            <TimelineHistory />
+            <TimelineHistory filter={filter} />
         </div>
     );
 };
