@@ -1,14 +1,18 @@
 'use client'
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import React from 'react';
+import React, { useContext } from 'react';
 import { GoClock } from 'react-icons/go';
 import { GrHomeRounded } from 'react-icons/gr';
 import { TfiStatsUp } from 'react-icons/tfi';
+import { FriendsContexts } from '../contexts/FriendsContext';
 
 const Navbar = () => {
     const pathname = usePathname();
-    console.log('pathname:', pathname)
+    // console.log('pathname:', pathname)
+
+    const {timeline} = useContext(FriendsContexts);
+    // console.log(timeline);
 
     return (
         <div className="bg-base-100 shadow-sm w-full">
