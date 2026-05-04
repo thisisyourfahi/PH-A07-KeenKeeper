@@ -5,6 +5,7 @@ import React, { useContext } from 'react';
 import { FiVideo } from 'react-icons/fi';
 import { LuPhoneCall } from 'react-icons/lu';
 import { MdOutlineTextsms } from 'react-icons/md';
+import { toast, ToastContainer } from 'react-toastify';
 
 
 const actionIcons = {
@@ -18,6 +19,9 @@ const ProfileAction = ({ friend }) => {
     const { timeline, setTimeline } = useContext(FriendsContexts)
 
     const handleAction = (action) => {
+        toast.success(`${action.toUpperCase()} ${friend.name}`, {
+            autoClose: 1000
+        })
         const now = new Date();
         const tempObj = {
             action: action,
@@ -27,7 +31,6 @@ const ProfileAction = ({ friend }) => {
         }
         setTimeline([...timeline, tempObj]);
         console.log(timeline);
-        
     }
 
     return (
@@ -57,6 +60,7 @@ const ProfileAction = ({ friend }) => {
                     <p className='font-bold'>Video</p>
                 </button>
             </div>
+            <ToastContainer />
         </div>
     );
 };
