@@ -6,7 +6,7 @@ const FriendProfile = async ({ params }) => {
     const res = await params;
     const friendId = res.friendId
 
-    const res2 = await fetch('http://localhost:3000/friends.json')
+    const res2 = await fetch('https://keenkeeper-lyart.vercel.app/friends.json')
     const friends = await res2.json();
 
     const friend = friends.find(friend => friend.id == friendId);
