@@ -7,8 +7,8 @@ const FriendsContainer = async() => {
     const friends = await res.json();
     
     return (
-        <div className="space-y-8 mb-20">
-            <h2 className="text-3xl font-bold">Your Friends</h2>
+        <div className="space-y-8 p-4 md:p-0 mb-20">
+            <h2 className="text-xl md:text-3xl font-bold">Your Friends</h2>
 
             <div className='grid grid-cols-2 md:grid-cols-2 l lg:grid-cols-4 gap-8'>
                 {

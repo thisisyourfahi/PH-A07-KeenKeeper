@@ -16,7 +16,7 @@ const Navbar = () => {
 
     return (
         <div className="bg-base-100 shadow-sm w-full">
-            <div className="navbar flex justify-between container mx-auto">
+            <div className="navbar flex flex-col gap-2 md:gap-0 md:flex-row  justify-between container mx-auto">
                 <div className="flex-1">
                     <h2 className="text-3xl font-bold">
                         Keen<span className='text-[#244D3F]'>Keeper</span>
