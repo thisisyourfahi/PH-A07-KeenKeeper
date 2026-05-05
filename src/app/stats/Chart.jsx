@@ -36,7 +36,7 @@ const Chart = () => {
             <p className='text-2xl'>By Interaction Type</p>
 
             <div className='w-fit mx-auto'>
-                <PieChart style={{ width: '50vh', maxWidth: '500px', maxHeight: '80vh', aspectRatio: 1 }} responsive>
+                <PieChart className='mt-4' style={{ width: '35vh', maxWidth: '500px', maxHeight: '50vh', aspectRatio: 1 }} responsive>
                     <Pie
                         data={data}
                         innerRadius="80%"
